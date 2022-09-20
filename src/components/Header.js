@@ -25,9 +25,9 @@ export default function Header() {
     <Container>
       <img src={logo} alt="logo" />
       <Menus>
-          <a href="https://reactjs.org">소개</a>
-          <a href="https://reactjs.org">공부</a>
-          <a href="https://reactjs.org">프로젝트</a>
+          <a href="/">소개</a>
+          <a href="/study">공부</a>
+          <a href="/project">프로젝트</a>
       </Menus>
     </Container>
   );

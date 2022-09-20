@@ -2,24 +2,20 @@
 import './App.css';
 import React from 'react';
 import Header from './components/Header';
+import {Route, Routes} from "react-router-dom";
+import Index from "./pages/About/index";
+import Project from "./pages/Project";
+import Study from "./pages/Study";
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/project" element={<Project />} />
+            <Route path="/study" element={<Study />} />
+        </Routes>
     </div>
   );
 }
