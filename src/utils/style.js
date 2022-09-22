@@ -1,27 +1,33 @@
-import { css, injectGlobal } from 'vue-styled-components';
+import { css } from "styled-components";
 
 export const Typography = {
     Heading1: css`
     font-size: 48px;
-    font-weight: 700;
-    line-height: 70px;
+    font-weight: 800;
+    line-height: 60px;
   `,
     Heading2: css`
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 35px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 46px;
   `,
     Paragraph1: css`
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 35px;
+  `,
+    Paragraph2: css`
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 29px;
     `,
-    Paragrahp2: css`
+    Paragraph3: css`
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     `,
 };
+
 export const Colors = {
     White: '#FFFFFF',
     Black: '#000000',
@@ -32,46 +38,12 @@ export const Colors = {
     Secondary000: '#FFCB46',
     Secondary100: '#FFDE87',
 
-    Grey000: '#767676',
-    Grey100:'#F1F1F5',
-    Grey200: '#F8F8FA',
+    Grey000: '#3E3E3E',
+    Grey100: '#767676',
+    Grey200: '#A0A0A0',
+    Grey300: '#E3E3E3',
+    Grey400: '#F8F8FA',
 
-    Highlight: 'linear-gradient(90deg, #04A3FB 0%, #D661FF 49.48%, #FFB800 100%, #FFB800 100%)',
+
+Highlight: 'linear-gradient(90deg, #04A3FB 0%, #D661FF 49.48%, #FFB800 100%, #FFB800 100%)',
 };
-
-injectGlobal`
-  @font-face {
-    font-family: 'Leferi Black';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Leferi White';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  * {
-    font-family: 'Noto Sans KR';
-    font-weight: 500;
-  }
-  h1 {
-    ${Typography.Heading1};
-    margin: 0;
-  }
-  h2 {
-    ${Typography.Heading2};
-    margin: 0;
-  }
-  
-  ::-webkit-scrollbar {
-    display: none
-  };
-  
-  a, a:hover, a:active {
-    color: inherit;
-    text-decoration: none;
-  }
-`;

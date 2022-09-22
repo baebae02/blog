@@ -1,23 +1,31 @@
 import styled from 'styled-components';
-import logo from '../assets/Logo.svg';
+import logo from '../assets/logo.svg';
 import React from 'react';
 import {Colors as Style, Typography} from '../utils/style';
 
 const Container = styled.div`
-  ${Typography.Paragrahp2};
+  ${Typography.Paragraph3};
   background-color: ${Style.Primary000};
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 14px 0;
+  padding: 10px 0;
   position: sticky;
+  align-items: center;
   top: 0px;
+  img { 
+    height: 20px;
+  }
 `;
 
 const Menus = styled.div`
   color: ${Style.White};
   display: flex;
-  gap: 16px;
+  gap: 40px;
+  a { 
+    color: inherit;
+    text-decoration: none;
+  }
 `;
 
 export default function Header() {
