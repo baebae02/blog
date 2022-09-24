@@ -1,49 +1,49 @@
 import { css } from "styled-components";
 
 export const Typography = {
-    Heading1: css`
+  h1: css`
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 60px;
   `,
-    Heading2: css`
+  h2: css`
     font-size: 32px;
-    font-weight: 800;
-    line-height: 46px;
+    font-weight: 700;
+    line-height: 40px;
   `,
-    Paragraph1: css`
+  p1: css`
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 35px;
   `,
-    Paragraph2: css`
+  p2: css`
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 29px;
-    `,
-    Paragraph3: css`
+  `,
+  p3: css`
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
-    `,
+  `,
 };
 
 export const Colors = {
-    White: '#FFFFFF',
-    Black: '#000000',
+  White: "#FFFFFF",
+  Black: "#000000",
 
-    Primary000: '#744CF3',
-    Primary100: '#CBB7FF',
+  Primary000: "#744CF3",
+  Primary100: "#CBB7FF",
 
-    Secondary000: '#FFCB46',
-    Secondary100: '#FFDE87',
+  Secondary000: "#FFCB46",
+  Secondary100: "#FFDE87",
 
-    Grey000: '#3E3E3E',
-    Grey100: '#767676',
-    Grey200: '#A0A0A0',
-    Grey300: '#E3E3E3',
-    Grey400: '#F8F8FA',
+  Grey000: "#3E3E3E",
+  Grey100: "#767676",
+  Grey200: "#A0A0A0",
+  Grey300: "#E3E3E3",
+  Grey400: "#F8F8FA",
 
-
-Highlight: 'linear-gradient(90deg, #04A3FB 0%, #D661FF 49.48%, #FFB800 100%, #FFB800 100%)',
+  Highlight:
+    "linear-gradient(90deg, #04A3FB 0%, #D661FF 49.48%, #FFB800 100%, #FFB800 100%)",
 };
