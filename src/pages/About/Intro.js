@@ -42,7 +42,7 @@ const Intro = () => {
   return (
     <div>
       <TitleArea>
-        <TypographyInput variant="h2">소개 </TypographyInput>
+        <TypographyInput variant="h1">소개 </TypographyInput>
         <TypographyInput varian="p2" color="Grey000">
           Introduce
         </TypographyInput>
