@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Intro from "./Intro";
 import Skill from "./Skill";
+import Project from "./Project";
 
 const Container = styled.div`
   display: flex;
@@ -16,6 +17,7 @@ const Index = () => {
     <Container>
       <Intro />
       <Skill />
+      <Project />
     </Container>
   );
 };

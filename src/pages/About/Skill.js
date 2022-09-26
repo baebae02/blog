@@ -2,17 +2,13 @@ import React from "react";
 import TypographyInput from "../../components/TypographyInput";
 import styled, { css } from "styled-components";
 import { Colors } from "../../utils/style";
+import DivLine from "../../components/DivLine";
 
 const TitleArea = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   gap: 8px;
-`;
-
-const DivLine = styled.div`
-  border: 1px solid ${Colors.Grey300};
-  width: 1000px;
 `;
 
 const ColorBar = styled.div`
