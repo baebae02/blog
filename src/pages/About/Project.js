@@ -12,14 +12,14 @@ const TitleArea = styled.div`
 `;
 
 const Title = styled.div`
-  ${Typography.p1};
-  background: ${Colors.Grey400};
+  ${Typography.p2};
+  background: ${Colors.Grey600};
   border-radius: 4px;
-  padding: 0 60px;
+  padding: 0 40px;
 `;
 
 const ProjectArea = styled.div`
-  margin: 40px 0;
+  margin: 20px 0;
   display: flex;
   justify-content: space-between;
 `;
@@ -61,14 +61,14 @@ const Projects = [
   {
     title: "CodeBaerry",
     date: "2022.05",
-    imgSrc: "chunjae",
+    imgSrc: "codeBaerry",
     color: "#EEF4FC",
   },
   {
     title: "Sprout",
     date: "Junction Asia 2022",
     imgSrc: "sprout",
-    color: "#EEF4FC",
+    color: "#F7FFFE",
   },
 ];
 
@@ -86,22 +86,26 @@ const Study = [
     color: "#EEF4FC",
   },
 ];
+
 const Item = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px 0;
-  gap: 8px;
+  margin: 10px 0 15px 0;
+  gap: 4px;
 `;
 
 const ItemCard = styled.div`
-  box-shadow: 0px 4px 0px #b4c1d2;
-  width: 128px;
-  height: 128px;
+  box-shadow: 1px 4px 1px #b4c1d2;
+  height: 80px;
   display: flex;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   border-radius: 24px;
+  img {
+    width: 80px;
+  }
   ${(props) =>
     props.bgColor &&
     css`
@@ -113,8 +117,8 @@ const Project = () => {
   return (
     <div>
       <TitleArea>
-        <TypographyInput variant="h1">프로젝트 </TypographyInput>
-        <TypographyInput varian="p2" color="Grey000">
+        <TypographyInput variant="h2">프로젝트 </TypographyInput>
+        <TypographyInput variant="p2" color="Grey000">
           Project
         </TypographyInput>
       </TitleArea>
@@ -131,7 +135,7 @@ const Project = () => {
                 />
               </ItemCard>
               <div>
-                <TypographyInput variant="p1">{value.title}</TypographyInput>
+                <TypographyInput variant="p2">{value.title}</TypographyInput>
                 <TypographyInput variant="p3" color="Grey100">
                   {value.date}
                 </TypographyInput>
@@ -150,7 +154,7 @@ const Project = () => {
                 />
               </ItemCard>
               <div>
-                <TypographyInput variant="p1">{value.title}</TypographyInput>
+                <TypographyInput variant="p2">{value.title}</TypographyInput>
                 <TypographyInput variant="p3" color="Grey100">
                   {value.date}
                 </TypographyInput>
@@ -169,7 +173,7 @@ const Project = () => {
                 />
               </ItemCard>
               <div>
-                <TypographyInput variant="p1">{value.title}</TypographyInput>
+                <TypographyInput variant="p2">{value.title}</TypographyInput>
                 <TypographyInput variant="p3" color="Grey100">
                   {value.date}
                 </TypographyInput>

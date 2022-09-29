@@ -1,7 +1,7 @@
 import React from "react";
 import TypographyInput from "../../components/TypographyInput";
 import styled, { css } from "styled-components";
-import { Colors } from "../../utils/style";
+import { Colors, Typography } from "../../utils/style";
 import DivLine from "../../components/DivLine";
 
 const TitleArea = styled.div`
@@ -28,29 +28,30 @@ const SkillArea = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 30px 0;
-  padding: 38px 0;
+  margin: 50px 0;
+  padding: 24px 0;
   position: relative;
 `;
 
 const ArrayArea = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 54px;
-  margin-left: 100px;
+  gap: 44px;
+  margin-left: 80px;
 `;
 
 const Item = styled.div`
+  ${Typography.p3};
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 128px;
-  color: ${Colors.Grey100};
+  width: 112px;
+  color: ${Colors.Grey200};
   img {
-    background-color: ${Colors.Grey300};
-    padding: 24px;
-    border-radius: 40px;
-    height: 80px;
+    background-color: ${Colors.Grey500};
+    padding: 12px;
+    border-radius: 30px;
+    height: 88px;
   }
 `;
 
@@ -89,8 +90,8 @@ const Skill = () => {
   return (
     <div>
       <TitleArea>
-        <TypographyInput variant="h1">기술 </TypographyInput>
-        <TypographyInput varian="p2" color="Grey000">
+        <TypographyInput variant="h2">기술 </TypographyInput>
+        <TypographyInput variant="p2" color="Grey000">
           Skill
         </TypographyInput>
       </TitleArea>
