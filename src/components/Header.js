@@ -4,7 +4,7 @@ import React from "react";
 import { Colors as Style, Typography } from "../utils/style";
 
 const Container = styled.div`
-  ${Typography.Paragraph3};
+  ${Typography.p3};
   background-color: ${Style.Primary000};
   z-index: 100;
   display: flex;

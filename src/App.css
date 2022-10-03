@@ -1,7 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
 .App {
   text-align: center;
 }
 
-* {
+@font-face {
   font-family: 'Noto Sans KR';
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+  font-weight: 500;
+}
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
 }

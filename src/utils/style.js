@@ -3,32 +3,32 @@ import { css } from "styled-components";
 export const Typography = {
   h1: css`
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 60px;
   `,
   h2: css`
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 50px;
   `,
   h3: css`
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 40px;
   `,
   p1: css`
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 35px;
   `,
   p2: css`
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 29px;
   `,
   p3: css`
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 20px;
   `,
 };
